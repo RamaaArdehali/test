@@ -1,0 +1,331 @@
+/* ----------- General ----------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background:rgb(245, 255, 250);
+    color: #333;
+}
+
+/* ----------- Header ----------- */
+header {
+    padding: 20px;
+    text-align: center;
+    background: rgba(207, 167, 167, 0.1);
+    backdrop-filter: blur(10px);
+    top: 0px;
+    position: sticky;
+    
+
+}
+
+.navbari a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: marquee 25s linear infinite;
+  font-size: 1.2rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+
+#logo {
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    margin-left: 20px ;
+    padding: 20px;
+}
+
+#search {
+    padding: 7px 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: 150ms cubic-bezier(0.4 , 0 , 0.2 , 1);
+    all: unset;
+}
+
+.search {
+    padding: 7px 15px;
+    border: 1rem;
+    background: #e13c73;
+    color: white;
+    border-radius: 8px;
+    position: absolute;
+    pointer-events: none;
+    transition: 150rem cubic-bezier(0.4,0,0.2,1);
+}
+.search:hover {
+    background: #d12e65;
+}
+
+/* ----------- Image Container (Products) ----------- */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 30px;
+    justify-items: center;
+}
+
+/* ----------- Product Card ----------- */
+.product {
+    position: relative;
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+}
+
+.product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.product img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.product button {
+    margin-top: 12px;
+    padding: 12px 20px;
+    border: none;
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.product button:hover {
+    background: rgba(255,255,255,0.6);
+}
+
+/* ----------- Info Box on Hover ----------- */
+.product .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.9);
+    padding: 12px;
+    font-size: 14px;
+    color: #333;
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s;
+}
+
+.product:hover .info {
+    opacity: 1;
+}
+
+.vasat{
+     width: 100%;
+    margin: 0;
+    
+}
+.vasat img {
+   
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.gooshe{
+      width: 25%;
+    height: auto;
+    display: block;
+}
+.gooshe img {
+       width: 50%;
+        margin: 0;
+}
+
+.aside{
+ text-align: left;
+
+
+
+}
+/* ----------- Shokofe Horizontal Row ----------- */
+.shokofe-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffe0e0;
+    border-radius: 15px;
+    margin: 50px;
+}
+.shokofe {
+    max-width: 220px;
+}
+
+/* ----------- Cart Buttons ----------- */
+.cart-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.cart-buttons button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #e13c73;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    align-items: center;
+}
+
+.cart-buttons button:hover {
+    background: #d12e65;
+}
+
+/* ----------- Footer ----------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background:rgb(245, 245, 245);
+    backdrop-filter: blur(10px);
+    margin-top: 60px;
+    height: 100px ;
+}
+
+/* ----------- Register Page ----------- */
+.register-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 320px;
+    margin: 50px auto;
+    font-family: Arial;
+    direction: rtl;
+}
+
+.register-box h2 {
+    text-align: center;
+    color: #ff4e8a;
+    margin-bottom: 15px;
+}
+
+.register-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.register-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 18px;
+    background: #ff4e8a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.register-box button:hover {
+    background: #e13c73;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.success {
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* ----------- About Us Page ----------- */
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: justify;
+    font-size: 16px;
+}
+
+.container h2 {
+    color:#ff4e8a;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background: #6b4d33;
+    margin: 10px auto 25px;
+    border-radius: 10px;
+}
+
+/* ----------- Responsive ----------- */
+@media (max-width: 900px) {
+    .image-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .shokofe-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .image-container {
+        grid-template-columns: 1fr;
+    }
+}
